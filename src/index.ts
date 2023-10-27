@@ -1,14 +1,6 @@
-interface Color {
-  red: number;
-  green: number;
-  blue: number;
-}
+export * from "./Errors/RouteError";
 
-const color: Color = {
-  red: 255,
-  green: 100,
-  blue: 5,
-};
-
-console.log(color);
-export default color;
+// express middlewares
+export * from "./middleware/authMiddleware";
+export * from "./middleware/bodyCheckers";
+export * from "./middleware/errorHandler";
