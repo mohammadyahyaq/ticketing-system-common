@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { body, validationResult } from "express-validator";
-import { RouteError } from "../Errors/RouteError";
+import { RouteError } from "../errors/RouteError";
 
 export const emailRequired = body('email')
     .isEmail()

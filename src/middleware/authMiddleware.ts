@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
-import { RouteError } from '../Errors/RouteError';
+import { RouteError } from '../errors/RouteError';
 
 interface UserPayload {
     id: string;
