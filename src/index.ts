@@ -11,3 +11,4 @@ export * from "./events/basePublisher";
 export * from "./events/Subjects";
 export * from "./events/TicketCreatedEvent";
 export * from "./events/TicketUpdatedEvent";
+export * from "./enums/OrderStatus.enum";
