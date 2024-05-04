@@ -4,9 +4,11 @@ import { Subjects } from "./Subjects";
 export interface OrderCreatedEvent {
   subject: Subjects.OrderCreated;
   data: {
+    id: string;
     userId: string;
     status: OrderStatus;
-    expiresAt: Date;
+    // we need to store it as UTC time stamp to not share the location of the orders service
+    expiresAt: string;
     ticket: {
       id: string;
       price: number;
