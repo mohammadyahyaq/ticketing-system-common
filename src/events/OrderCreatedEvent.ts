@@ -9,6 +9,7 @@ export interface OrderCreatedEvent {
     status: OrderStatus;
     // we need to store it as UTC time stamp to not share the location of the orders service
     expiresAt: string;
+    version: number;
     ticket: {
       id: string;
       price: number;

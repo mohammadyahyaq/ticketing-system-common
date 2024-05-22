@@ -9,5 +9,6 @@ export interface TicketUpdatedEvent {
     userId: string;
     createdAt: string;
     updatedAt: string;
+    version: number;
   };
 }
